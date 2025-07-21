@@ -1,0 +1,50 @@
+{
+  "objectInfo" : {
+    "id" : "jn3MZcIYm44jdXFWy6mwOE",
+    "name" : "MappingTestS3",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010STY1700000000002Y"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "INVALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2025-07-21T15:39:28.583Z",
+  "objectRefs" : [ {
+    "id" : "0DqDYQ5j7wrjBSFyt1Oau9",
+    "name" : "CK_Conn_S3",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010STY0B00000000008U"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "infagcs buckets",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}

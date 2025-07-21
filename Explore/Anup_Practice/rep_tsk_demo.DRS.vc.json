@@ -1,0 +1,26 @@
+{
+  "name" : "rep_tsk_demo",
+  "maxLogs" : 10,
+  "sourceConnectionId" : "@8UMGeSqK4kjk2swhcPTzU4",
+  "sourceConnectionName" : "AM_MSSQL_CONN",
+  "targetConnectionId" : "@8UMGeSqK4kjk2swhcPTzU4",
+  "targetConnectionName" : "AM_MSSQL_CONN",
+  "tablePrefix" : "BKP_",
+  "verbose" : false,
+  "fullRefresh" : true,
+  "replicateAllObjects" : false,
+  "removeDeleted" : true,
+  "queryAll" : false,
+  "srcShowLabels" : false,
+  "maxRows" : 0,
+  "stopOnError" : true,
+  "replicationObjects" : [
+    "Car_Models"
+  ],
+  "metadataMode" : 0,
+  "bulkApi" : false,
+  "base64BodySize" : 0.0,
+  "bulkApiDBTarget" : false,
+  "srcRuntimeAttrs" : { },
+  "vcsExportTime" : "2025-07-21 08:39:22 PDT"
+}

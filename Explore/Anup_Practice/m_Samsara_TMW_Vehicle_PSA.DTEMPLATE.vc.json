@@ -1,0 +1,1036 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "m_Samsara_TMW_Vehicle_PSA",
+    "specialCharacterSupport" : "false",
+    "flowOrderEntries" : [
+      {
+        "sourceTypes" : [
+          "Source"
+        ],
+        "sources" : [
+          "src_VehicleData"
+        ],
+        "targetTypes" : [
+          "Target"
+        ],
+        "targets" : [
+          "tgt_Samsara_TMW_Vehicle_PSA"
+        ]
+      }
+    ],
+    "links" : [
+      {
+        "link" : "exp_satge -> tgt_Samsara_TMW_Vehicle_PSA"
+      },
+      {
+        "link" : "src_VehicleData -> exp_satge"
+      }
+    ],
+    "parameters" : [
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "DBConnection_Integrations",
+        "anonymousType" : {
+          "typeSystem" : "SqlServer",
+          "connectionType" : "SqlServer"
+        }
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2025-06-03T13:37:24.438Z",
+        "name" : "src_VehicleData",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "REC_ID"
+            },
+            "name" : "REC_ID",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TMW_Name"
+            },
+            "name" : "TMW_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TMW_LicensePlate"
+            },
+            "name" : "TMW_LicensePlate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TMW_TagId_Name"
+            },
+            "name" : "TMW_TagId_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TMW_TagId_lkp"
+            },
+            "name" : "TMW_TagId_lkp",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Update_Flag"
+            },
+            "name" : "Update_Flag",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Update_Comment"
+            },
+            "name" : "Update_Comment",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "samsara_name"
+            },
+            "name" : "samsara_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "samsara_id"
+            },
+            "name" : "samsara_id",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "samsara_serial"
+            },
+            "name" : "samsara_serial",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "samsara_vin"
+            },
+            "name" : "samsara_vin",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "samsara_make"
+            },
+            "name" : "samsara_make",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "samsara_model"
+            },
+            "name" : "samsara_model",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Samsara_LicensePlate"
+            },
+            "name" : "Samsara_LicensePlate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Samsara_TagId_Name"
+            },
+            "name" : "Samsara_TagId_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Samsara_TagId"
+            },
+            "name" : "Samsara_TagId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@5khwyexJX7Cj2UghwAqcKa",
+          "connectionName" : "SQLServer_Integrations_dbo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "QUERY",
+          "typeSystem" : "SqlServer",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "customQuery" : "With Vehicle_STG AS\n(select distinct \nA.name,A.id,A.serial,A.vin,A.make,A.model,A.licensePlate\nfrom \n[IntegrationsDEV].[dbo].[Samsara_Vehicles_Data_STG] A\nwhere A.name like '%JEFFTRK%'),\nVehicle_Tag_STG AS\n(select distinct \nA.name,D.id as Tag_ID,D.name as Tag_Name\nfrom \n[IntegrationsDEV].[dbo].[Samsara_Vehicles_Data_STG] A\nleft join [IntegrationsDEV].[dbo].[Samsara_Vehicles_Attributes_STG] B on A.Base_Seq=B.Base_Seq and A.PK_data=B.[FK_data]\nleft join [IntegrationsDEV].[dbo].[Samsara_Vehicles_StringValues_STG] C on A.Base_Seq=C.Base_Seq and C.FK_attributes=B.PK_attributes\nleft join [IntegrationsDEV].[dbo].[Samsara_Vehicles_Tags_STG] D on A.Base_Seq=D.Base_Seq and D.FK_data=A.PK_data),\nTag_STG AS\n(SELECT distinct \n       [id] as Tag_ID\n      ,[name] as Tag_name\n  FROM [IntegrationsDEV].[dbo].[Samsara_Tags_Data_STG])\nSELECT A.REC_ID\n      ,A.TMW_Name\n      ,A.TMW_LicensePlate\n      ,A.TMW_TagId_Name\n      ,Tag_STG.Tag_ID as TMW_TagId_lkp\n\t  ,Cast(Case when COALESCE(A.TMW_TagId_Name,'~')=COALESCE(B.licensePlate,'~') And COALESCE(A.TMW_TagId_Name,'~')=COALESCE(C.Tag_Name,'~') Then 'No Change'\n\t        Else 'Update' End as varchar(4000)) as Update_Flag\n\t  ,Cast(Case when COALESCE(A.TMW_TagId_Name,'~')=COALESCE(B.licensePlate,'~') And COALESCE(A.TMW_TagId_Name,'~')=COALESCE(C.Tag_Name,'~') Then 'All Fields Match Samsara'\n\t        Else 'Change Detected, Pushing Update' End as varchar(4000)) as Update_Comment\n      ,B.name as samsara_name\n      ,B.ID as samsara_id\n      ,B.serial as samsara_serial\n      ,B.vin as samsara_vin\n      ,B.make as samsara_make\n      ,B.model as samsara_model\n      ,B.licensePlate as Samsara_LicensePlate\n      ,C.Tag_Name as Samsara_TagId_Name\n      ,C.Tag_ID  as Samsara_TagId\n  FROM [IntegrationsDEV].[dbo].[Samsara_TMW_Vehicle_PSA] A\n  Inner Join Vehicle_STG B on A.[TMW_Name]=B.name \n  Left Join Vehicle_Tag_STG C on  A.[TMW_Name]=C.name and COALESCE(A.[TMW_TagId_Name],'~')=COALESCE(C.Tag_Name,'~')\n  Left Join Tag_STG on A.[TMW_TagId_Name]=Tag_STG.Tag_name",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "REC_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "REC_ID",
+                "nativeName" : "REC_ID",
+                "nativeType" : "integer",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0
+              },
+              {
+                "name" : "TMW_Name",
+                "fieldType" : "CONNECTOR",
+                "label" : "TMW_Name",
+                "nativeName" : "TMW_Name",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "TMW_LicensePlate",
+                "fieldType" : "CONNECTOR",
+                "label" : "TMW_LicensePlate",
+                "nativeName" : "TMW_LicensePlate",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "TMW_TagId_Name",
+                "fieldType" : "CONNECTOR",
+                "label" : "TMW_TagId_Name",
+                "nativeName" : "TMW_TagId_Name",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "TMW_TagId_lkp",
+                "fieldType" : "CONNECTOR",
+                "label" : "TMW_TagId_lkp",
+                "nativeName" : "TMW_TagId_lkp",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "Update_Flag",
+                "fieldType" : "CONNECTOR",
+                "label" : "Update_Flag",
+                "nativeName" : "Update_Flag",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "Update_Comment",
+                "fieldType" : "CONNECTOR",
+                "label" : "Update_Comment",
+                "nativeName" : "Update_Comment",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "samsara_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "samsara_name",
+                "nativeName" : "samsara_name",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "samsara_id",
+                "fieldType" : "CONNECTOR",
+                "label" : "samsara_id",
+                "nativeName" : "samsara_id",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "samsara_serial",
+                "fieldType" : "CONNECTOR",
+                "label" : "samsara_serial",
+                "nativeName" : "samsara_serial",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "samsara_vin",
+                "fieldType" : "CONNECTOR",
+                "label" : "samsara_vin",
+                "nativeName" : "samsara_vin",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "samsara_make",
+                "fieldType" : "CONNECTOR",
+                "label" : "samsara_make",
+                "nativeName" : "samsara_make",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "samsara_model",
+                "fieldType" : "CONNECTOR",
+                "label" : "samsara_model",
+                "nativeName" : "samsara_model",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "Samsara_LicensePlate",
+                "fieldType" : "CONNECTOR",
+                "label" : "Samsara_LicensePlate",
+                "nativeName" : "Samsara_LicensePlate",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "Samsara_TagId_Name",
+                "fieldType" : "CONNECTOR",
+                "label" : "Samsara_TagId_Name",
+                "nativeName" : "Samsara_TagId_Name",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              },
+              {
+                "name" : "Samsara_TagId",
+                "fieldType" : "CONNECTOR",
+                "label" : "Samsara_TagId",
+                "nativeName" : "Samsara_TagId",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-06-03T13:37:24.438Z",
+        "name" : "tgt_Samsara_TMW_Vehicle_PSA",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : [
+          "REC_ID"
+        ],
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "REC_ID"
+            },
+            "name" : "REC_ID",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TMW_Name"
+            },
+            "name" : "TMW_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TMW_LicensePlate"
+            },
+            "name" : "TMW_LicensePlate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TMW_TagId_Name"
+            },
+            "name" : "TMW_TagId_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TMW_TagId_lkp"
+            },
+            "name" : "TMW_TagId_lkp",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Update_Flag"
+            },
+            "name" : "Update_Flag",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Update_Comment"
+            },
+            "name" : "Update_Comment",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "samsara_name"
+            },
+            "name" : "samsara_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "samsara_id"
+            },
+            "name" : "samsara_id",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "samsara_serial"
+            },
+            "name" : "samsara_serial",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "samsara_vin"
+            },
+            "name" : "samsara_vin",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "samsara_make"
+            },
+            "name" : "samsara_make",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "samsara_model"
+            },
+            "name" : "samsara_model",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Samsara_LicensePlate"
+            },
+            "name" : "Samsara_LicensePlate",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Samsara_TagId_Name"
+            },
+            "name" : "Samsara_TagId_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Samsara_TagId"
+            },
+            "name" : "Samsara_TagId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4000,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DB_Insert_DateTime"
+            },
+            "name" : "DB_Insert_DateTime",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "DB_Update_DateTime"
+            },
+            "name" : "DB_Update_DateTime",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@5khwyexJX7Cj2UghwAqcKa",
+          "connectionName" : "SQLServer_Integrations_dbo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "SqlServer",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "dbo/Samsara_TMW_Vehicle_PSA",
+            "dbSchema" : "dbo",
+            "label" : "Samsara_TMW_Vehicle_PSA",
+            "objectName" : "Samsara_TMW_Vehicle_PSA",
+            "path" : "dbo/Samsara_TMW_Vehicle_PSA",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "REC_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "REC_ID",
+                "nativeName" : "REC_ID",
+                "nativeType" : "integer",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "TMW_Name",
+                "fieldType" : "CONNECTOR",
+                "label" : "TMW_Name",
+                "nativeName" : "TMW_Name",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "TMW_LicensePlate",
+                "fieldType" : "CONNECTOR",
+                "label" : "TMW_LicensePlate",
+                "nativeName" : "TMW_LicensePlate",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "TMW_TagId_Name",
+                "fieldType" : "CONNECTOR",
+                "label" : "TMW_TagId_Name",
+                "nativeName" : "TMW_TagId_Name",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "TMW_TagId_lkp",
+                "fieldType" : "CONNECTOR",
+                "label" : "TMW_TagId_lkp",
+                "nativeName" : "TMW_TagId_lkp",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "Update_Flag",
+                "fieldType" : "CONNECTOR",
+                "label" : "Update_Flag",
+                "nativeName" : "Update_Flag",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "Update_Comment",
+                "fieldType" : "CONNECTOR",
+                "label" : "Update_Comment",
+                "nativeName" : "Update_Comment",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "samsara_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "samsara_name",
+                "nativeName" : "samsara_name",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "samsara_id",
+                "fieldType" : "CONNECTOR",
+                "label" : "samsara_id",
+                "nativeName" : "samsara_id",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "samsara_serial",
+                "fieldType" : "CONNECTOR",
+                "label" : "samsara_serial",
+                "nativeName" : "samsara_serial",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "samsara_vin",
+                "fieldType" : "CONNECTOR",
+                "label" : "samsara_vin",
+                "nativeName" : "samsara_vin",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "samsara_make",
+                "fieldType" : "CONNECTOR",
+                "label" : "samsara_make",
+                "nativeName" : "samsara_make",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "samsara_model",
+                "fieldType" : "CONNECTOR",
+                "label" : "samsara_model",
+                "nativeName" : "samsara_model",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "Samsara_LicensePlate",
+                "fieldType" : "CONNECTOR",
+                "label" : "Samsara_LicensePlate",
+                "nativeName" : "Samsara_LicensePlate",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "Samsara_TagId_Name",
+                "fieldType" : "CONNECTOR",
+                "label" : "Samsara_TagId_Name",
+                "nativeName" : "Samsara_TagId_Name",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "Samsara_TagId",
+                "fieldType" : "CONNECTOR",
+                "label" : "Samsara_TagId",
+                "nativeName" : "Samsara_TagId",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4000,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "DB_Insert_DateTime",
+                "fieldType" : "CONNECTOR",
+                "label" : "DB_Insert_DateTime",
+                "nativeName" : "DB_Insert_DateTime",
+                "nativeType" : "timestamp",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              },
+              {
+                "name" : "DB_Update_DateTime",
+                "fieldType" : "CONNECTOR",
+                "label" : "DB_Update_DateTime",
+                "nativeName" : "DB_Update_DateTime",
+                "nativeType" : "timestamp",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/Samsara_TMW_Vehicle_PSA"
+                  }
+                ]
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Update"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-06-03T13:45:05.021Z",
+        "name" : "exp_satge",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "fields" : [
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "set_DB_Update_DateTime",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "expFieldType" : "OUTPUT",
+            "expression" : "SESSSTARTTIME"
+          }
+        ],
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-07-21 08:39:23 PDT"
+}

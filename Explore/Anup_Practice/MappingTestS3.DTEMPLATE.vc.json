@@ -1,0 +1,278 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "MappingTestS3",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Source -> Target"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2025-06-17T18:04:53.735Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "Order_ID"
+            },
+            "name" : "Order_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Customer__ID"
+            },
+            "name" : "Customer__ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Order_Status"
+            },
+            "name" : "Order_Status",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Order_Amount"
+            },
+            "name" : "Order_Amount",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0DqDYQ5j7wrjBSFyt1Oau9",
+          "connectionName" : "CK_Conn_S3",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "dataFormat" : {
+            "formatId" : "Flat",
+            "validateHSchema" : "false",
+            "attributes" : [
+              {
+                "name" : "delimiter",
+                "value" : ","
+              },
+              {
+                "name" : "escapeChar",
+                "value" : "\\"
+              },
+              {
+                "name" : "qualifier",
+                "value" : "\""
+              },
+              {
+                "name" : "qualifierMode",
+                "value" : "MINIMAL"
+              },
+              {
+                "name" : "disableEscapeChar",
+                "value" : "true"
+              },
+              {
+                "name" : "codePage",
+                "value" : "UTF-8"
+              },
+              {
+                "name" : "headerLineNumber",
+                "value" : "1"
+              },
+              {
+                "name" : "firstDataRow",
+                "value" : "2"
+              },
+              {
+                "name" : "targetHeader",
+                "value" : "With Header"
+              },
+              {
+                "name" : "importColumnFromFirstLine",
+                "value" : "true"
+              },
+              {
+                "name" : "generateHeader",
+                "value" : "true"
+              },
+              {
+                "name" : "fixedWidthMode",
+                "value" : "false"
+              },
+              {
+                "name" : "maxRowsToPreview",
+                "value" : "0"
+              }
+            ]
+          },
+          "object" : {
+            "name" : "v2-s3-bucket/anup_test%2F/Order_data.csv",
+            "label" : "v2-s3-bucket/anup_test%2F/Order_data.csv",
+            "objectName" : "Order_data.csv",
+            "objectType" : "amazons3",
+            "path" : "v2-s3-bucket/anup_test%2F/Order_data.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "Order_ID",
+                "fieldType" : "PARSER",
+                "label" : "Order ID",
+                "nativeName" : "Order ID",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Order_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Customer__ID",
+                "fieldType" : "PARSER",
+                "label" : "Customer?%ID",
+                "nativeName" : "Customer?%ID",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Order_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Order_Status",
+                "fieldType" : "PARSER",
+                "label" : "Order Status",
+                "nativeName" : "Order Status",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Order_data.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Order_Amount",
+                "fieldType" : "PARSER",
+                "label" : "Order_Amount",
+                "nativeName" : "Order_Amount",
+                "nativeType" : "flat_string",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Order_data.csv"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-06-17T18:04:53.738Z",
+        "name" : "Target",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "useDynamicFileName" : "false",
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-07-21 08:39:23 PDT"
+}

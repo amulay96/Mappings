@@ -1,0 +1,141 @@
+{
+  "name" : "mt_SnowflakeToSnowflake",
+  "runtimeEnvironmentId" : "@7UmOVLFercZiaIArpaUSWJ",
+  "runtimeEnvironmentName" : "asvanupvm01.informatica.com",
+  "maxLogs" : 10,
+  "parameters" : [
+    {
+      "name" : "$Snowflake_Source$",
+      "type" : "EXTENDED_SOURCE",
+      "label" : "Snowflake_Source",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "isSelectDistinct" : "false",
+        "isMsrcFilterParameterized" : "false",
+        "isMsrcSortParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "originalPath" : "Snowflake_Source"
+      },
+      "sourceConnectionId" : "@9F8mgx3WNy1iWwCQWVBOSW",
+      "connectionName" : "AM_Snowflake_06092023",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "object" : {
+          "name" : "GCS/ANUP/EMPLOYEES",
+          "label" : "GCS/ANUP/EMPLOYEES",
+          "metadataUpdated" : false
+        },
+        "singleMode" : true,
+        "objects" : [
+          {
+            "name" : "GCS/ANUP/EMPLOYEES",
+            "label" : "GCS/ANUP/EMPLOYEES",
+            "metadataUpdated" : false
+          }
+        ]
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "unspecified" : false,
+      "fileList" : false
+    },
+    {
+      "name" : "$Snowflake_Target$",
+      "type" : "TARGET",
+      "label" : "Snowflake_Target",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "supportApplyDDLChanges" : "true",
+        "originalPath" : "Snowflake_Target"
+      },
+      "targetConnectionId" : "@9F8mgx3WNy1iWwCQWVBOSW",
+      "connectionName" : "AM_Snowflake_06092023",
+      "targetObject" : "GCS/ANUP/Filter_Employees_Data2",
+      "targetObjectLabel" : "GCS/ANUP/Filter_Employees_Data2",
+      "newFlatFile" : false,
+      "newObject" : true,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "newObjectName" : "GCS/ANUP/Filter_Employees_Data2",
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "operationType" : "Insert",
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "singleMode" : true
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "objectName" : "GCS/ANUP/Filter_Employees_Data2",
+      "objectLabel" : "GCS/ANUP/Filter_Employees_Data2",
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "unspecified" : false,
+      "fileList" : false
+    }
+  ],
+  "verbose" : false,
+  "lastRunTime" : 1749757014000,
+  "mappingId" : "@loRXANk4nKhcEKdtEFpF0P",
+  "mappingTemplateName" : "Mapping16",
+  "sessionPropertiesList" : [
+    {
+      "name" : "Pushdown Optimization",
+      "value" : "None"
+    },
+    {
+      "name" : "Pushdown Optimization Context",
+      "value" : "None"
+    },
+    {
+      "name" : "Pushdown Optimization Fallback Option",
+      "value" : "Partial PDO"
+    }
+  ],
+  "hidden" : false,
+  "enableCrossSchemaPushdown" : true,
+  "enableParallelRun" : false,
+  "autoTunedApplied" : false,
+  "autoTunedAppliedType" : "NONE",
+  "paramFileType" : "PARAM_FILE_LOCAL",
+  "schemaMode" : "async",
+  "valid" : true,
+  "optimizationPlan" : "NONE",
+  "allowMaxFieldLength" : false,
+  "specialCharacterSupport" : false,
+  "midstreamPreview" : false,
+  "vcsExportTime" : "2025-07-21 08:39:26 PDT"
+}

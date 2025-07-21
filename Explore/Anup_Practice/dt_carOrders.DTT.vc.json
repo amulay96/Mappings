@@ -1,0 +1,61 @@
+{
+  "name" : "dt_carOrders",
+  "state" : "VALID",
+  "runtimeEnvironmentId" : "010STY250000000000BG",
+  "runtimeEnvironmentName" : "asvanupvm01.informatica.com",
+  "properties" : [
+    {
+      "name" : "Source",
+      "type" : "SOURCE",
+      "connectionId" : "010STY0B00000000000A",
+      "connectionName" : "AM_MSSQL_CONN",
+      "object" : {
+        "name" : "c04368443/Car_Models",
+        "metadataUpdated" : false,
+        "dbSchema" : "c04368443"
+      }
+    },
+    {
+      "name" : "Target",
+      "type" : "TARGET",
+      "connectionId" : "010STY0B00000000000A",
+      "connectionName" : "AM_MSSQL_CONN",
+      "targetObject" : "Car_Info",
+      "newObject" : true,
+      "truncateTarget" : true,
+      "bulkApiDBTarget" : false,
+      "operationType" : "Insert",
+      "handleSpecialChars" : false
+    },
+    {
+      "name" : "$p_filter_src$",
+      "type" : "FILTER",
+      "text" : "TRUE",
+      "advancedFilterExpression" : false
+    },
+    {
+      "name" : "$p_field_map$",
+      "type" : "FIELD_MAPPING"
+    },
+    {
+      "name" : "$p_exp_fields$",
+      "type" : "EXPRESSION"
+    },
+    {
+      "name" : "Lookup",
+      "type" : "LOOKUP",
+      "connectionId" : "010STY0B00000000000A",
+      "connectionName" : "AM_MSSQL_CONN",
+      "lookupObject" : "c04368443/Car_Orders",
+      "lookupCondition" : "Model_Company = SRC_Model_Company",
+      "dbSchema" : "c04368443"
+    },
+    {
+      "name" : "$p_filter_lkp$",
+      "type" : "FILTER",
+      "text" : "TRUE",
+      "advancedFilterExpression" : false
+    }
+  ],
+  "vcsExportTime" : "2025-07-21 08:39:22 PDT"
+}

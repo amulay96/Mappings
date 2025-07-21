@@ -1,0 +1,145 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>6jKsJlv58pIO3M4-gt-8351480-2025-06-26T22:36:08.493Z::tf.xml</types1:EntryId>
+      <types1:Name>Taskflow1</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>amulay_cac1</types1:CreatedBy>
+      <types1:CreationDate>2025-06-26T22:36:08Z</types1:CreationDate>
+      <types1:ModifiedBy>amulay_cac1</types1:ModifiedBy>
+      <types1:ModificationDate>2025-06-26T23:17:33Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>amulay_cac1</types1:PublishedBy>
+      <types1:PublicationDate>2025-06-26T23:17:37Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.Taskflow1/Taskflow1.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="Taskflow1"
+                   name="Taskflow1"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="Data Task 1" type="reference">
+                  <options>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                     <option name="referenceTo">$po:mt-sftp-test-2W6WDAZWhwZke29SswbI8X</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="mcdx3tqg" targetId="mcdx3tr4"/>
+               </start>
+               <eventContainer id="mcdx3tr4">
+                  <service id="mcdx3tqf">
+                     <title>Data Task 1</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mt_sftp_test</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">2W6WDAZWhwZke29SswbI8X</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mt-sftp-test-2W6WDAZWhwZke29SswbI8X">temp.Data Task 1</operation>
+                           <operation source="constant"
+                                      to="mt-sftp-test-2W6WDAZWhwZke29SswbI8X/input[1]/source[1]/Source[1]/object">inp1.csv</operation>
+                           <operation source="constant"
+                                      to="temp.Data Task 1[1]/input[1]/source[1]/Source[1]/object">inp1.csv</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.Data Task 1/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Task_Id">Task Id</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Task_Status">Task Status</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.Data Task 1/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Error_Message">Error Message</operation>
+                        <operation source="field" to="temp.Data Task 1/output/TotalTransErrors">Total Transformation Errors</operation>
+                        <operation source="field" to="temp.Data Task 1/output/FirstErrorCode">First Error Code</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="mcdx3tqh" targetId="c"/>
+                  <events>
+                     <catch faultField="temp.Data Task 1/fault"
+                            id="mcdx3tr2"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.Data Task 1/fault"
+                            id="mcdx3tr3"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-sftp-test-2W6WDAZWhwZke29SswbI8X"
+                              isByCopy="true"
+                              name="mt-sftp-test-2W6WDAZWhwZke29SswbI8X">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="Input Parameters"
+                            name="input"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>9XjbIbhqOIJdvrHFmcZl0u</types1:GUID>
+      <types1:DisplayName>Taskflow1</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2025-07-21T15:39:27.735Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

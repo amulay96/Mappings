@@ -1,0 +1,50 @@
+{
+  "objectInfo" : {
+    "id" : "0JiBJXASOkelTfaTXWus2h",
+    "name" : "Taskflow2",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "HAMXPiciT6sFsds-gt-435966-2025-07-16T19:24:00.154Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-07-21T15:39:28.575Z",
+  "objectRefs" : [ {
+    "id" : "icqmBBXSY6kemwyLpafigI",
+    "name" : "mct_ParamTesting",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010STY0Z000000000039"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Anup_Practice"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

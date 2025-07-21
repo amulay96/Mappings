@@ -1,0 +1,296 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "ParamTesting",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Source -> Target"
+      }
+    ],
+    "parameters" : [
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "true",
+        "expressionVariable" : "false",
+        "name" : "param_query"
+      },
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "param_src_conn",
+        "anonymousType" : {
+          "subType" : "TOOLKIT_CCI",
+          "typeSystem" : "TOOLKIT",
+          "connectionType" : "Snowflake Cloud Data Warehouse V2"
+        }
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2025-06-23T15:13:59.130Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "ID"
+            },
+            "name" : "ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NAME"
+            },
+            "name" : "NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 16777216,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DEPARTMENT_ID"
+            },
+            "name" : "DEPARTMENT_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SALARY"
+            },
+            "name" : "SALARY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 10,
+            "scale" : 2
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@9F8mgx3WNy1iWwCQWVBOSW",
+          "connectionName" : "AM_Snowflake_06092023",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "QUERY",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "customQuery" : "$$param_query2",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "ID",
+                "nativeName" : "ID",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "EMPLOYEES"
+                  }
+                ]
+              },
+              {
+                "name" : "NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "NAME",
+                "nativeName" : "NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 16777216,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "EMPLOYEES"
+                  }
+                ]
+              },
+              {
+                "name" : "DEPARTMENT_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "DEPARTMENT_ID",
+                "nativeName" : "DEPARTMENT_ID",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "EMPLOYEES"
+                  }
+                ]
+              },
+              {
+                "name" : "SALARY",
+                "fieldType" : "CONNECTOR",
+                "label" : "SALARY",
+                "nativeName" : "SALARY",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 2,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "EMPLOYEES"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-06-23T15:13:59.130Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@aPCkpndCsORe7V5RuvKxWG",
+          "connectionName" : "FFT_Normalizer_Source",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "empout.csv",
+            "label" : "empout.csv",
+            "path" : "empout.csv",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      }
+    ],
+    "variables" : [
+      {
+        "aggregationType" : "MAX",
+        "expressionVariable" : "false",
+        "name" : "param_query2",
+        "platformType" : {
+          "name" : "string"
+        },
+        "precision" : 1000,
+        "retentionPolicy" : "ON_SUCCESS_OR_WARNING",
+        "scale" : 0,
+        "defaultValue" : "select * from GCS.ANUP.EMPLOYEES WHERE DEPARTMENT_ID=30"
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-07-21 08:39:23 PDT"
+}

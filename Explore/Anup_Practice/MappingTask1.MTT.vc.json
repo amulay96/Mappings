@@ -1,0 +1,185 @@
+{
+  "name" : "MappingTask1",
+  "runtimeEnvironmentId" : "@7UmOVLFercZiaIArpaUSWJ",
+  "runtimeEnvironmentName" : "asvanupvm01.informatica.com",
+  "maxLogs" : 10,
+  "parameters" : [
+    {
+      "name" : "$Source$",
+      "type" : "EXTENDED_SOURCE",
+      "label" : "param_Source_Connection",
+      "uiProperties" : {
+        "cnxtype" : "SqlServer",
+        "connectionParameterized" : "true",
+        "paramName" : "param_Source_Connection",
+        "paramType-mapping" : "Connection",
+        "logcnx" : "param_Source_Connection",
+        "isSelectDistinct" : "false",
+        "isMsrcFilterParameterized" : "false",
+        "isMsrcSortParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "flags" : "SUPPORTS_MULTI_SCHEMA",
+        "originalPath" : "Source"
+      },
+      "sourceConnectionId" : "@8UMGeSqK4kjk2swhcPTzU4",
+      "connectionName" : "AM_MSSQL_CONN",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : true,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "object" : {
+          "name" : "c04368443/Car_Info",
+          "label" : "Car_Info",
+          "metadataUpdated" : false,
+          "dbSchema" : "c04368443"
+        },
+        "singleMode" : true,
+        "objects" : [
+          {
+            "name" : "c04368443/Car_Info",
+            "label" : "Car_Info",
+            "metadataUpdated" : false,
+            "dbSchema" : "c04368443"
+          }
+        ]
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "runtimeParameterData" : {
+        "connectionParameterName" : "param_Source_Connection",
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "unspecified" : false,
+      "fileList" : false
+    },
+    {
+      "name" : "$Target$",
+      "type" : "TARGET",
+      "label" : "Target",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "flags" : "SUPPORTS_MULTI_SCHEMA",
+        "supportApplyDDLChanges" : "true",
+        "originalPath" : "Target"
+      },
+      "targetConnectionId" : "@8UMGeSqK4kjk2swhcPTzU4",
+      "connectionName" : "AM_MSSQL_CONN",
+      "targetObject" : "c04368443/Trg_Car_Info",
+      "targetObjectLabel" : "Trg_Car_Info",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "operationType" : "Insert",
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "singleMode" : true
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "objectName" : "c04368443/Trg_Car_Info",
+      "objectLabel" : "Trg_Car_Info",
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "dbSchema" : "c04368443",
+      "restmodernSource" : true,
+      "unspecified" : false,
+      "fileList" : false
+    },
+    {
+      "name" : "$parm_ERP_Country$",
+      "type" : "STRING",
+      "text" : "'LB'",
+      "label" : "parm_ERP_Country",
+      "uiProperties" : {
+        "paramName" : "parm_ERP_Country",
+        "paramType-mapping" : "String",
+        "originalPath" : "Expression"
+      },
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : true,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "customFuncCfg" : { },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "unspecified" : false,
+      "fileList" : false
+    }
+  ],
+  "verbose" : false,
+  "lastRunTime" : 1748986465000,
+  "mappingId" : "@6pbUpaVzImqiSiTiGFc0iE",
+  "mappingTemplateName" : "m_ERP_DWH",
+  "sessionPropertiesList" : [
+    {
+      "name" : "Pushdown Optimization",
+      "value" : "None"
+    },
+    {
+      "name" : "Pushdown Optimization Context",
+      "value" : "None"
+    },
+    {
+      "name" : "Pushdown Optimization Fallback Option",
+      "value" : "Partial PDO"
+    }
+  ],
+  "hidden" : false,
+  "enableCrossSchemaPushdown" : true,
+  "enableParallelRun" : false,
+  "autoTunedApplied" : false,
+  "autoTunedAppliedType" : "NONE",
+  "paramFileType" : "PARAM_FILE_LOCAL",
+  "schemaMode" : "async",
+  "valid" : true,
+  "optimizationPlan" : "NONE",
+  "allowMaxFieldLength" : false,
+  "specialCharacterSupport" : false,
+  "midstreamPreview" : false,
+  "vcsExportTime" : "2025-07-21 08:39:26 PDT"
+}

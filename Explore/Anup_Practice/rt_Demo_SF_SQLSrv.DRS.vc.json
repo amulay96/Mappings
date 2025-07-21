@@ -1,0 +1,33 @@
+{
+  "name" : "rt_Demo_SF_SQLSrv",
+  "description" : "Accounts info from Salesforce to SQL Server",
+  "maxLogs" : 10,
+  "sourceConnectionId" : "@6yAIcpvNmCYfu7Af2Oopqf",
+  "sourceConnectionName" : "SF_Demo",
+  "targetConnectionId" : "@8UMGeSqK4kjk2swhcPTzU4",
+  "targetConnectionName" : "AM_MSSQL_CONN",
+  "tablePrefix" : "SF_Trg_",
+  "verbose" : false,
+  "fullRefresh" : false,
+  "replicateAllObjects" : false,
+  "removeDeleted" : true,
+  "queryAll" : false,
+  "srcShowLabels" : true,
+  "maxRows" : 0,
+  "stopOnError" : true,
+  "replicationObjects" : [
+    "Account"
+  ],
+  "metadataMode" : 0,
+  "bulkApi" : false,
+  "base64BodySize" : 0.0,
+  "bulkApiDBTarget" : false,
+  "srcRuntimeAttrs" : {
+    "attrs" : {
+      "Maximum Rows Per Request" : "0",
+      "PK Chunking size" : "100000",
+      "Enable PK Chunking" : "0"
+    }
+  },
+  "vcsExportTime" : "2025-07-21 08:39:22 PDT"
+}

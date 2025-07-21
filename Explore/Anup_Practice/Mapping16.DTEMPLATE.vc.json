@@ -1,0 +1,450 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "Mapping16",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Filter -> Snowflake_Target"
+      },
+      {
+        "link" : "Snowflake_Source -> Filter"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2025-06-11T18:33:33.850Z",
+        "name" : "Snowflake_Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "ID"
+            },
+            "name" : "ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NAME"
+            },
+            "name" : "NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 16777216,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DEPARTMENT_ID"
+            },
+            "name" : "DEPARTMENT_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SALARY"
+            },
+            "name" : "SALARY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 10,
+            "scale" : 2
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@9F8mgx3WNy1iWwCQWVBOSW",
+          "connectionName" : "AM_Snowflake_06092023",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "GCS/ANUP/EMPLOYEES",
+            "label" : "GCS/ANUP/EMPLOYEES",
+            "objectName" : "EMPLOYEES",
+            "objectType" : "table",
+            "path" : "GCS/ANUP/EMPLOYEES",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "ID",
+                "nativeName" : "ID",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "EMPLOYEES"
+                  }
+                ]
+              },
+              {
+                "name" : "NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "NAME",
+                "nativeName" : "NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 16777216,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "EMPLOYEES"
+                  }
+                ]
+              },
+              {
+                "name" : "DEPARTMENT_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "DEPARTMENT_ID",
+                "nativeName" : "DEPARTMENT_ID",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "EMPLOYEES"
+                  }
+                ]
+              },
+              {
+                "name" : "SALARY",
+                "fieldType" : "CONNECTOR",
+                "label" : "SALARY",
+                "nativeName" : "SALARY",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 2,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "EMPLOYEES"
+                  }
+                ]
+              }
+            ],
+            "objectAttributes" : [
+              {
+                "name" : "tableType",
+                "value" : "TABLE"
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-06-11T18:33:33.850Z",
+        "name" : "Snowflake_Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "ID"
+            },
+            "name" : "ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NAME"
+            },
+            "name" : "NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 16777216,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DEPARTMENT_ID"
+            },
+            "name" : "DEPARTMENT_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SALARY"
+            },
+            "name" : "SALARY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 10,
+            "scale" : 2
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@9F8mgx3WNy1iWwCQWVBOSW",
+          "connectionName" : "AM_Snowflake_06092023",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "GCS/ANUP/Filter_Employees_Data2",
+            "label" : "GCS/ANUP/Filter_Employees_Data2",
+            "path" : "GCS/ANUP/Filter_Employees_Data2",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "ID",
+                "nativeName" : "ID",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Filter_Employees_Data2"
+                  }
+                ]
+              },
+              {
+                "name" : "NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "NAME",
+                "nativeName" : "NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 16777216,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Filter_Employees_Data2"
+                  }
+                ]
+              },
+              {
+                "name" : "DEPARTMENT_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "DEPARTMENT_ID",
+                "nativeName" : "DEPARTMENT_ID",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Filter_Employees_Data2"
+                  }
+                ]
+              },
+              {
+                "name" : "SALARY",
+                "fieldType" : "CONNECTOR",
+                "label" : "SALARY",
+                "nativeName" : "SALARY",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 2,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "Filter_Employees_Data2"
+                  }
+                ]
+              }
+            ]
+          },
+          "runtimeAttributes" : {
+            "attributes" : [
+              {
+                "name" : "UpdateMode",
+                "value" : "Update As Update"
+              },
+              {
+                "name" : "Truncate Target Table",
+                "value" : "YES"
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-06-11T18:40:37.831Z",
+        "name" : "Filter",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Verbose Data"
+          },
+          {
+            "name" : "Optional",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "filterConditions" : [
+          {
+            "fieldName" : "SALARY",
+            "filterValue" : "55000",
+            "operator" : ">"
+          }
+        ]
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-07-21 08:39:22 PDT"
+}

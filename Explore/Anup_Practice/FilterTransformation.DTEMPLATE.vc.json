@@ -1,0 +1,412 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "FilterTransformation",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Filter -> Target"
+      },
+      {
+        "link" : "Source -> Filter"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2025-06-04T21:39:19.500Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "SRC_Model_Company"
+            },
+            "name" : "SRC_Model_Company",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SRC_Model_name"
+            },
+            "name" : "SRC_Model_name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SRC_Make_Year"
+            },
+            "name" : "SRC_Make_Year",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SRC_Color"
+            },
+            "name" : "SRC_Color",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "OrderID"
+            },
+            "name" : "OrderID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Total_Cost"
+            },
+            "name" : "Total_Cost",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Purchase_date"
+            },
+            "name" : "Purchase_date",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "Loan"
+            },
+            "name" : "Loan",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Model_Company"
+            },
+            "name" : "Model_Company",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@8UMGeSqK4kjk2swhcPTzU4",
+          "connectionName" : "AM_MSSQL_CONN",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "SqlServer",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "c04368443/Car_Info",
+            "dbSchema" : "c04368443",
+            "label" : "Car_Info",
+            "objectName" : "Car_Info",
+            "path" : "c04368443/Car_Info",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "SRC_Model_Company",
+                "fieldType" : "CONNECTOR",
+                "label" : "SRC_Model_Company",
+                "nativeName" : "SRC_Model_Company",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "c04368443/Car_Info"
+                  }
+                ]
+              },
+              {
+                "name" : "SRC_Model_name",
+                "fieldType" : "CONNECTOR",
+                "label" : "SRC_Model_name",
+                "nativeName" : "SRC_Model_name",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "c04368443/Car_Info"
+                  }
+                ]
+              },
+              {
+                "name" : "SRC_Make_Year",
+                "fieldType" : "CONNECTOR",
+                "label" : "SRC_Make_Year",
+                "nativeName" : "SRC_Make_Year",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "c04368443/Car_Info"
+                  }
+                ]
+              },
+              {
+                "name" : "SRC_Color",
+                "fieldType" : "CONNECTOR",
+                "label" : "SRC_Color",
+                "nativeName" : "SRC_Color",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "c04368443/Car_Info"
+                  }
+                ]
+              },
+              {
+                "name" : "OrderID",
+                "fieldType" : "CONNECTOR",
+                "label" : "OrderID",
+                "nativeName" : "OrderID",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "c04368443/Car_Info"
+                  }
+                ]
+              },
+              {
+                "name" : "Total_Cost",
+                "fieldType" : "CONNECTOR",
+                "label" : "Total_Cost",
+                "nativeName" : "Total_Cost",
+                "nativeType" : "integer",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "c04368443/Car_Info"
+                  }
+                ]
+              },
+              {
+                "name" : "Purchase_date",
+                "fieldType" : "CONNECTOR",
+                "label" : "Purchase_date",
+                "nativeName" : "Purchase_date",
+                "nativeType" : "timestamp",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "c04368443/Car_Info"
+                  }
+                ]
+              },
+              {
+                "name" : "Loan",
+                "fieldType" : "CONNECTOR",
+                "label" : "Loan",
+                "nativeName" : "Loan",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "c04368443/Car_Info"
+                  }
+                ]
+              },
+              {
+                "name" : "Model_Company",
+                "fieldType" : "CONNECTOR",
+                "label" : "Model_Company",
+                "nativeName" : "Model_Company",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "c04368443/Car_Info"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-06-04T21:39:19.500Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@8UMGeSqK4kjk2swhcPTzU4",
+          "connectionName" : "AM_MSSQL_CONN",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "SqlServer",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "Filtered_Car_Info",
+            "label" : "Filtered_Car_Info",
+            "path" : "Filtered_Car_Info",
+            "retainMetadata" : "false"
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "true",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-06-04T22:11:49.223Z",
+        "name" : "Filter",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Verbose Data"
+          },
+          {
+            "name" : "Optional",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "advancedFilterCondition" : " IIF( IsNull(OrderID) , FALSE, TRUE) "
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-07-21 08:39:22 PDT"
+}
