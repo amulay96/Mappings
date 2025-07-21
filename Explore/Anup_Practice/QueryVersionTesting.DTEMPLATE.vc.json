@@ -42,7 +42,7 @@
           "typeSystem" : "SqlServer",
           "useDynamicFileName" : "false",
           "object" : {
-            "customQuery" : "Select * from Dummy",
+            "customQuery" : "Select * from Dummy1",
             "retainMetadata" : "false"
           },
           "readOptions" : {
@@ -128,5 +128,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-07-21 08:46:06 PDT"
+  "vcsExportTime" : "2025-07-21 08:46:46 PDT"
 }
