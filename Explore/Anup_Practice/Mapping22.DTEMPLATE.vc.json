@@ -1,5 +1,6 @@
 {
   "content" : {
+    "description" : "Commit-2",
     "allowMaxFieldLength" : "false",
     "bigIntConvertType" : "ONLY_BIGINT",
     "documentType" : "MAPPING",
@@ -249,5 +250,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-12-26 12:10:32 PST"
+  "vcsExportTime" : "2025-12-26 12:16:10 PST"
 }
