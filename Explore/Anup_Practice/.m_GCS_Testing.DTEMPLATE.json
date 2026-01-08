@@ -16,14 +16,14 @@
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "V1",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2025-07-21T15:39:28.565Z",
+  "updateTime" : "2026-01-08T16:31:16.324Z",
   "objectRefs" : [ {
     "id" : "aPCkpndCsORe7V5RuvKxWG",
     "name" : "FFT_Normalizer_Source",
