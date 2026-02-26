@@ -7,7 +7,10 @@
     "specialCharacterSupport" : "false",
     "links" : [
       {
-        "link" : "Source -> Target"
+        "link" : "Expression -> Target"
+      },
+      {
+        "link" : "Source -> Expression"
       }
     ],
     "parameters" : [
@@ -51,14 +54,6 @@
           }
         ],
         "sessionProperties" : [
-          {
-            "name" : "Source file directory",
-            "value" : "$SrcDir"
-          },
-          {
-            "name" : "Source filename",
-            "value" : "$SrcFile"
-          },
           {
             "name" : "File Reader Truncate String Null",
             "value" : "NO"
@@ -265,8 +260,46 @@
             "useSuccessFile" : "false"
           }
         }
+      },
+      {
+        "createTime" : "2025-08-29T14:40:11.703Z",
+        "name" : "Expression",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "fields" : [
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "JobID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "'$CurrentTaskId' ||'-'||'$CurrentRunId'"
+          }
+        ],
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
       }
     ]
   },
-  "vcsExportTime" : "2025-07-21 08:39:24 PDT"
+  "vcsExportTime" : "2026-02-25 15:49:02 PST"
 }
