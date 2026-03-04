@@ -1,0 +1,3814 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "m_T2_M_data",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "s_Dummy -> SQL_Insert"
+      },
+      {
+        "link" : "SQL_Insert -> Expression"
+      },
+      {
+        "link" : "Filter -> t_sf_SQL_Log_Test"
+      },
+      {
+        "link" : "Expression -> Filter"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2026-01-06T18:33:32.452Z",
+        "name" : "s_Dummy",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "DATE_ID"
+            },
+            "name" : "DATE_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DATE"
+            },
+            "name" : "DATE",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "DAY_NUM"
+            },
+            "name" : "DAY_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DAY_NAME"
+            },
+            "name" : "DAY_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 9,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DAY_NAME_SHORT"
+            },
+            "name" : "DAY_NAME_SHORT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DAY_OF_WEEK_NUM"
+            },
+            "name" : "DAY_OF_WEEK_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DAY_OF_YEAR_NUM"
+            },
+            "name" : "DAY_OF_YEAR_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_WEEKEND"
+            },
+            "name" : "IS_WEEKEND",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "WEEK_NUM"
+            },
+            "name" : "WEEK_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FISCAL_WEEK"
+            },
+            "name" : "FISCAL_WEEK",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_OF_WEEK"
+            },
+            "name" : "FIRST_OF_WEEK",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_OF_WEEK"
+            },
+            "name" : "LAST_OF_WEEK",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "WEEK_OF_MONTH_NUM"
+            },
+            "name" : "WEEK_OF_MONTH_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FISCAL_PERIOD"
+            },
+            "name" : "FISCAL_PERIOD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "MONTH_NUM"
+            },
+            "name" : "MONTH_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "MONTH_NAME"
+            },
+            "name" : "MONTH_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 9,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "MONTH_NAME_SHORT"
+            },
+            "name" : "MONTH_NAME_SHORT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_OF_MONTH"
+            },
+            "name" : "FIRST_OF_MONTH",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_OF_MONTH"
+            },
+            "name" : "LAST_OF_MONTH",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_OF_NEXT_MONTH"
+            },
+            "name" : "FIRST_OF_NEXT_MONTH",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_OF_NEXT_MONTH"
+            },
+            "name" : "LAST_OF_NEXT_MONTH",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "FISCAL_QUARTER"
+            },
+            "name" : "FISCAL_QUARTER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FISCAL_QUARTER_NUM"
+            },
+            "name" : "FISCAL_QUARTER_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "QUARTER_NUM"
+            },
+            "name" : "QUARTER_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "QUARTER"
+            },
+            "name" : "QUARTER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_OF_QUARTER"
+            },
+            "name" : "FIRST_OF_QUARTER",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_OF_QUARTER"
+            },
+            "name" : "LAST_OF_QUARTER",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "FISCAL_YEAR"
+            },
+            "name" : "FISCAL_YEAR",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "YEAR_NUM"
+            },
+            "name" : "YEAR_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_OF_YEAR"
+            },
+            "name" : "FIRST_OF_YEAR",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_OF_YEAR"
+            },
+            "name" : "LAST_OF_YEAR",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_LEAP_YEAR"
+            },
+            "name" : "IS_LEAP_YEAR",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "HAS_53_WEEKS"
+            },
+            "name" : "HAS_53_WEEKS",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "STYLE_MMYYYY"
+            },
+            "name" : "STYLE_MMYYYY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "STYLE_WRITTEN"
+            },
+            "name" : "STYLE_WRITTEN",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "STYLE_NUMBER"
+            },
+            "name" : "STYLE_NUMBER",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "STYLE_DB"
+            },
+            "name" : "STYLE_DB",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "STYLE_EXCEL"
+            },
+            "name" : "STYLE_EXCEL",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_NUM"
+            },
+            "name" : "IS_CUR_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_WK_NUM"
+            },
+            "name" : "IS_CUR_WK_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_MTD"
+            },
+            "name" : "IS_MTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_MTD_PY"
+            },
+            "name" : "IS_MTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_QTD"
+            },
+            "name" : "IS_QTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_QTD_PY"
+            },
+            "name" : "IS_QTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_YTD"
+            },
+            "name" : "IS_YTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_YTD_PY"
+            },
+            "name" : "IS_YTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_FISCAL_MTD"
+            },
+            "name" : "IS_FISCAL_MTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_FISCAL_MTD_PY"
+            },
+            "name" : "IS_FISCAL_MTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_FISCAL_QTD"
+            },
+            "name" : "IS_FISCAL_QTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_FISCAL_QTD_PY"
+            },
+            "name" : "IS_FISCAL_QTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_FISCAL_YTD"
+            },
+            "name" : "IS_FISCAL_YTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_FISCAL_YTD_PY"
+            },
+            "name" : "IS_FISCAL_YTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_FISCAL_WEEK"
+            },
+            "name" : "IS_CUR_FISCAL_WEEK",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_MONTH_NUM"
+            },
+            "name" : "IS_CUR_MONTH_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_QUARTER_NUM"
+            },
+            "name" : "IS_CUR_QUARTER_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_YEAR_NUM"
+            },
+            "name" : "IS_CUR_YEAR_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_FISCAL_MONTH_NUM"
+            },
+            "name" : "IS_CUR_FISCAL_MONTH_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_FISCAL_QUARTER_NUM"
+            },
+            "name" : "IS_CUR_FISCAL_QUARTER_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_FISCAL_YEAR_NUM"
+            },
+            "name" : "IS_CUR_FISCAL_YEAR_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_WKTD"
+            },
+            "name" : "IS_WKTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_WKTD_PY"
+            },
+            "name" : "IS_WKTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@9F8mgx3WNy1iWwCQWVBOSW",
+          "connectionName" : "AM_Snowflake_06092023",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "CURATED_VISTAR/DATAMART/DIM_DATE",
+            "label" : "CURATED_VISTAR/DATAMART/DIM_DATE",
+            "objectName" : "DIM_DATE",
+            "objectType" : "table",
+            "path" : "CURATED_VISTAR/DATAMART/DIM_DATE",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "DATE_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "DATE_ID",
+                "nativeName" : "DATE_ID",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "false"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "DATE",
+                "nativeName" : "DATE",
+                "nativeType" : "date",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "DAY_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "DAY_NUM",
+                "nativeName" : "DAY_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "DAY_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "DAY_NAME",
+                "nativeName" : "DAY_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 9,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "DAY_NAME_SHORT",
+                "fieldType" : "CONNECTOR",
+                "label" : "DAY_NAME_SHORT",
+                "nativeName" : "DAY_NAME_SHORT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "DAY_OF_WEEK_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "DAY_OF_WEEK_NUM",
+                "nativeName" : "DAY_OF_WEEK_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "DAY_OF_YEAR_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "DAY_OF_YEAR_NUM",
+                "nativeName" : "DAY_OF_YEAR_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_WEEKEND",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_WEEKEND",
+                "nativeName" : "IS_WEEKEND",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "WEEK_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "WEEK_NUM",
+                "nativeName" : "WEEK_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "FISCAL_WEEK",
+                "fieldType" : "CONNECTOR",
+                "label" : "FISCAL_WEEK",
+                "nativeName" : "FISCAL_WEEK",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "FIRST_OF_WEEK",
+                "fieldType" : "CONNECTOR",
+                "label" : "FIRST_OF_WEEK",
+                "nativeName" : "FIRST_OF_WEEK",
+                "nativeType" : "date",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "LAST_OF_WEEK",
+                "fieldType" : "CONNECTOR",
+                "label" : "LAST_OF_WEEK",
+                "nativeName" : "LAST_OF_WEEK",
+                "nativeType" : "date",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "WEEK_OF_MONTH_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "WEEK_OF_MONTH_NUM",
+                "nativeName" : "WEEK_OF_MONTH_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "FISCAL_PERIOD",
+                "fieldType" : "CONNECTOR",
+                "label" : "FISCAL_PERIOD",
+                "nativeName" : "FISCAL_PERIOD",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "MONTH_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "MONTH_NUM",
+                "nativeName" : "MONTH_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "MONTH_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "MONTH_NAME",
+                "nativeName" : "MONTH_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 9,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "MONTH_NAME_SHORT",
+                "fieldType" : "CONNECTOR",
+                "label" : "MONTH_NAME_SHORT",
+                "nativeName" : "MONTH_NAME_SHORT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "FIRST_OF_MONTH",
+                "fieldType" : "CONNECTOR",
+                "label" : "FIRST_OF_MONTH",
+                "nativeName" : "FIRST_OF_MONTH",
+                "nativeType" : "date",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "LAST_OF_MONTH",
+                "fieldType" : "CONNECTOR",
+                "label" : "LAST_OF_MONTH",
+                "nativeName" : "LAST_OF_MONTH",
+                "nativeType" : "date",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "FIRST_OF_NEXT_MONTH",
+                "fieldType" : "CONNECTOR",
+                "label" : "FIRST_OF_NEXT_MONTH",
+                "nativeName" : "FIRST_OF_NEXT_MONTH",
+                "nativeType" : "date",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "LAST_OF_NEXT_MONTH",
+                "fieldType" : "CONNECTOR",
+                "label" : "LAST_OF_NEXT_MONTH",
+                "nativeName" : "LAST_OF_NEXT_MONTH",
+                "nativeType" : "date",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "FISCAL_QUARTER",
+                "fieldType" : "CONNECTOR",
+                "label" : "FISCAL_QUARTER",
+                "nativeName" : "FISCAL_QUARTER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "FISCAL_QUARTER_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "FISCAL_QUARTER_NUM",
+                "nativeName" : "FISCAL_QUARTER_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "QUARTER_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "QUARTER_NUM",
+                "nativeName" : "QUARTER_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "QUARTER",
+                "fieldType" : "CONNECTOR",
+                "label" : "QUARTER",
+                "nativeName" : "QUARTER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "FIRST_OF_QUARTER",
+                "fieldType" : "CONNECTOR",
+                "label" : "FIRST_OF_QUARTER",
+                "nativeName" : "FIRST_OF_QUARTER",
+                "nativeType" : "date",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "LAST_OF_QUARTER",
+                "fieldType" : "CONNECTOR",
+                "label" : "LAST_OF_QUARTER",
+                "nativeName" : "LAST_OF_QUARTER",
+                "nativeType" : "date",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "FISCAL_YEAR",
+                "fieldType" : "CONNECTOR",
+                "label" : "FISCAL_YEAR",
+                "nativeName" : "FISCAL_YEAR",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "YEAR_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "YEAR_NUM",
+                "nativeName" : "YEAR_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "FIRST_OF_YEAR",
+                "fieldType" : "CONNECTOR",
+                "label" : "FIRST_OF_YEAR",
+                "nativeName" : "FIRST_OF_YEAR",
+                "nativeType" : "date",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "LAST_OF_YEAR",
+                "fieldType" : "CONNECTOR",
+                "label" : "LAST_OF_YEAR",
+                "nativeName" : "LAST_OF_YEAR",
+                "nativeType" : "date",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_LEAP_YEAR",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_LEAP_YEAR",
+                "nativeName" : "IS_LEAP_YEAR",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "HAS_53_WEEKS",
+                "fieldType" : "CONNECTOR",
+                "label" : "HAS_53_WEEKS",
+                "nativeName" : "HAS_53_WEEKS",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "STYLE_MMYYYY",
+                "fieldType" : "CONNECTOR",
+                "label" : "STYLE_MMYYYY",
+                "nativeName" : "STYLE_MMYYYY",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "STYLE_WRITTEN",
+                "fieldType" : "CONNECTOR",
+                "label" : "STYLE_WRITTEN",
+                "nativeName" : "STYLE_WRITTEN",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "STYLE_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "STYLE_NUMBER",
+                "nativeName" : "STYLE_NUMBER",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "STYLE_DB",
+                "fieldType" : "CONNECTOR",
+                "label" : "STYLE_DB",
+                "nativeName" : "STYLE_DB",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "STYLE_EXCEL",
+                "fieldType" : "CONNECTOR",
+                "label" : "STYLE_EXCEL",
+                "nativeName" : "STYLE_EXCEL",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_CUR_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_CUR_NUM",
+                "nativeName" : "IS_CUR_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_CUR_WK_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_CUR_WK_NUM",
+                "nativeName" : "IS_CUR_WK_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_MTD",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_MTD",
+                "nativeName" : "IS_MTD",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_MTD_PY",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_MTD_PY",
+                "nativeName" : "IS_MTD_PY",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_QTD",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_QTD",
+                "nativeName" : "IS_QTD",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_QTD_PY",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_QTD_PY",
+                "nativeName" : "IS_QTD_PY",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_YTD",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_YTD",
+                "nativeName" : "IS_YTD",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_YTD_PY",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_YTD_PY",
+                "nativeName" : "IS_YTD_PY",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_FISCAL_MTD",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_FISCAL_MTD",
+                "nativeName" : "IS_FISCAL_MTD",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_FISCAL_MTD_PY",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_FISCAL_MTD_PY",
+                "nativeName" : "IS_FISCAL_MTD_PY",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_FISCAL_QTD",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_FISCAL_QTD",
+                "nativeName" : "IS_FISCAL_QTD",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_FISCAL_QTD_PY",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_FISCAL_QTD_PY",
+                "nativeName" : "IS_FISCAL_QTD_PY",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_FISCAL_YTD",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_FISCAL_YTD",
+                "nativeName" : "IS_FISCAL_YTD",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_FISCAL_YTD_PY",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_FISCAL_YTD_PY",
+                "nativeName" : "IS_FISCAL_YTD_PY",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_CUR_FISCAL_WEEK",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_CUR_FISCAL_WEEK",
+                "nativeName" : "IS_CUR_FISCAL_WEEK",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_CUR_MONTH_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_CUR_MONTH_NUM",
+                "nativeName" : "IS_CUR_MONTH_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_CUR_QUARTER_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_CUR_QUARTER_NUM",
+                "nativeName" : "IS_CUR_QUARTER_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_CUR_YEAR_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_CUR_YEAR_NUM",
+                "nativeName" : "IS_CUR_YEAR_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_CUR_FISCAL_MONTH_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_CUR_FISCAL_MONTH_NUM",
+                "nativeName" : "IS_CUR_FISCAL_MONTH_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_CUR_FISCAL_QUARTER_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_CUR_FISCAL_QUARTER_NUM",
+                "nativeName" : "IS_CUR_FISCAL_QUARTER_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_CUR_FISCAL_YEAR_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_CUR_FISCAL_YEAR_NUM",
+                "nativeName" : "IS_CUR_FISCAL_YEAR_NUM",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_WKTD",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_WKTD",
+                "nativeName" : "IS_WKTD",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              },
+              {
+                "name" : "IS_WKTD_PY",
+                "fieldType" : "CONNECTOR",
+                "label" : "IS_WKTD_PY",
+                "nativeName" : "IS_WKTD_PY",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DIM_DATE"
+                  }
+                ]
+              }
+            ],
+            "objectAttributes" : [
+              {
+                "name" : "tableType",
+                "value" : "TABLE"
+              },
+              {
+                "name" : "storageSerPol",
+                "value" : "Optimized"
+              },
+              {
+                "name" : "tableFormat",
+                "value" : "Standard Table"
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false",
+            "advancedFilterCondition" : "IS_CUR_NUM =3"
+          },
+          "runtimeAttributes" : {
+            "attributes" : [
+              {
+                "name" : "Pre SQL",
+                "value" : "TRUNCATE TABLE CURATED_VISTAR.DATALAKE.zz_T2_SUPPLIER_SALES_AND_MARKET_SHARE_TEMP"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "createTime" : "2026-01-06T18:33:32.452Z",
+        "name" : "t_sf_SQL_Log_Test",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "VALIDATION"
+            },
+            "name" : "VALIDATION",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RUN_DATE"
+            },
+            "name" : "RUN_DATE",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "SQLError"
+            },
+            "name" : "SQLError",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NumRowsAffected"
+            },
+            "name" : "NumRowsAffected",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@9F8mgx3WNy1iWwCQWVBOSW",
+          "connectionName" : "AM_Snowflake_06092023",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "CURATED_VISTAR/DATALAKE/SQL_LOG_TEST",
+            "label" : "CURATED_VISTAR/DATALAKE/SQL_LOG_TEST",
+            "path" : "CURATED_VISTAR/DATALAKE/SQL_LOG_TEST",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "VALIDATION",
+                "fieldType" : "CONNECTOR",
+                "label" : "VALIDATION",
+                "nativeName" : "VALIDATION",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "SQL_LOG_TEST"
+                  }
+                ]
+              },
+              {
+                "name" : "RUN_DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "RUN_DATE",
+                "nativeName" : "RUN_DATE",
+                "nativeType" : "timestampntz",
+                "original" : "false",
+                "precision" : 29,
+                "scale" : 9,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "SQL_LOG_TEST"
+                  }
+                ]
+              },
+              {
+                "name" : "SQLError",
+                "fieldType" : "CONNECTOR",
+                "label" : "SQLError",
+                "nativeName" : "SQLError",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "SQL_LOG_TEST"
+                  }
+                ]
+              },
+              {
+                "name" : "NumRowsAffected",
+                "fieldType" : "CONNECTOR",
+                "label" : "NumRowsAffected",
+                "nativeName" : "NumRowsAffected",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "SQL_LOG_TEST"
+                  }
+                ]
+              }
+            ],
+            "objectAttributes" : [
+              {
+                "name" : "tableFormat",
+                "value" : "Standard Table"
+              },
+              {
+                "name" : "parent",
+                "value" : "CURATED_VISTAR/DATALAKE"
+              }
+            ]
+          },
+          "runtimeAttributes" : {
+            "attributes" : [
+              {
+                "name" : "UpdateMode",
+                "value" : "Update As Update"
+              },
+              {
+                "name" : "Truncate Target Table",
+                "value" : "NO"
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false",
+            "tgtObjectAttributes" : [
+              {
+                "name" : "tableFormat",
+                "value" : "Standard Table"
+              },
+              {
+                "name" : "parent",
+                "value" : "CURATED_VISTAR/DATALAKE"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "createTime" : "2026-01-07T15:24:22.200Z",
+        "name" : "SQL_Insert",
+        "advancedProperties" : [
+          {
+            "name" : "Is Active",
+            "value" : "true"
+          },
+          {
+            "name" : "Is_Continue_On_Error_Selected",
+            "value" : "false"
+          },
+          {
+            "name" : "Auto_Commit",
+            "value" : "false"
+          },
+          {
+            "name" : "Max_Out_Row_Count",
+            "value" : "600"
+          },
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Transformation Scope",
+            "value" : "Row"
+          },
+          {
+            "name" : "Stored Procedure Type",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Execution Order",
+            "value" : "1"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "fieldMappingMode" : "MANUAL",
+        "unconnected" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "SQLError"
+            },
+            "name" : "SQLError",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0,
+            "fieldType" : "OUT"
+          },
+          {
+            "adapterField" : {
+              "name" : "NumRowsAffected"
+            },
+            "name" : "NumRowsAffected",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "fieldType" : "OUT"
+          },
+          {
+            "adapterField" : {
+              "name" : "DATE_ID"
+            },
+            "name" : "DATE_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "DATE"
+            },
+            "name" : "DATE",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "DAY_NUM"
+            },
+            "name" : "DAY_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "DAY_NAME"
+            },
+            "name" : "DAY_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 9,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "DAY_NAME_SHORT"
+            },
+            "name" : "DAY_NAME_SHORT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "DAY_OF_WEEK_NUM"
+            },
+            "name" : "DAY_OF_WEEK_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "DAY_OF_YEAR_NUM"
+            },
+            "name" : "DAY_OF_YEAR_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_WEEKEND"
+            },
+            "name" : "IS_WEEKEND",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "WEEK_NUM"
+            },
+            "name" : "WEEK_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "FISCAL_WEEK"
+            },
+            "name" : "FISCAL_WEEK",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_OF_WEEK"
+            },
+            "name" : "FIRST_OF_WEEK",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_OF_WEEK"
+            },
+            "name" : "LAST_OF_WEEK",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "WEEK_OF_MONTH_NUM"
+            },
+            "name" : "WEEK_OF_MONTH_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "FISCAL_PERIOD"
+            },
+            "name" : "FISCAL_PERIOD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "MONTH_NUM"
+            },
+            "name" : "MONTH_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "MONTH_NAME"
+            },
+            "name" : "MONTH_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 9,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "MONTH_NAME_SHORT"
+            },
+            "name" : "MONTH_NAME_SHORT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_OF_MONTH"
+            },
+            "name" : "FIRST_OF_MONTH",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_OF_MONTH"
+            },
+            "name" : "LAST_OF_MONTH",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_OF_NEXT_MONTH"
+            },
+            "name" : "FIRST_OF_NEXT_MONTH",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_OF_NEXT_MONTH"
+            },
+            "name" : "LAST_OF_NEXT_MONTH",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "FISCAL_QUARTER"
+            },
+            "name" : "FISCAL_QUARTER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "FISCAL_QUARTER_NUM"
+            },
+            "name" : "FISCAL_QUARTER_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "QUARTER_NUM"
+            },
+            "name" : "QUARTER_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "QUARTER"
+            },
+            "name" : "QUARTER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_OF_QUARTER"
+            },
+            "name" : "FIRST_OF_QUARTER",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_OF_QUARTER"
+            },
+            "name" : "LAST_OF_QUARTER",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "FISCAL_YEAR"
+            },
+            "name" : "FISCAL_YEAR",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "YEAR_NUM"
+            },
+            "name" : "YEAR_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_OF_YEAR"
+            },
+            "name" : "FIRST_OF_YEAR",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_OF_YEAR"
+            },
+            "name" : "LAST_OF_YEAR",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_LEAP_YEAR"
+            },
+            "name" : "IS_LEAP_YEAR",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "HAS_53_WEEKS"
+            },
+            "name" : "HAS_53_WEEKS",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "STYLE_MMYYYY"
+            },
+            "name" : "STYLE_MMYYYY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "STYLE_WRITTEN"
+            },
+            "name" : "STYLE_WRITTEN",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "STYLE_NUMBER"
+            },
+            "name" : "STYLE_NUMBER",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "STYLE_DB"
+            },
+            "name" : "STYLE_DB",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "STYLE_EXCEL"
+            },
+            "name" : "STYLE_EXCEL",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_NUM"
+            },
+            "name" : "IS_CUR_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_WK_NUM"
+            },
+            "name" : "IS_CUR_WK_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_MTD"
+            },
+            "name" : "IS_MTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_MTD_PY"
+            },
+            "name" : "IS_MTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_QTD"
+            },
+            "name" : "IS_QTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_QTD_PY"
+            },
+            "name" : "IS_QTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_YTD"
+            },
+            "name" : "IS_YTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_YTD_PY"
+            },
+            "name" : "IS_YTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_FISCAL_MTD"
+            },
+            "name" : "IS_FISCAL_MTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_FISCAL_MTD_PY"
+            },
+            "name" : "IS_FISCAL_MTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_FISCAL_QTD"
+            },
+            "name" : "IS_FISCAL_QTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_FISCAL_QTD_PY"
+            },
+            "name" : "IS_FISCAL_QTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_FISCAL_YTD"
+            },
+            "name" : "IS_FISCAL_YTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_FISCAL_YTD_PY"
+            },
+            "name" : "IS_FISCAL_YTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_FISCAL_WEEK"
+            },
+            "name" : "IS_CUR_FISCAL_WEEK",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_MONTH_NUM"
+            },
+            "name" : "IS_CUR_MONTH_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_QUARTER_NUM"
+            },
+            "name" : "IS_CUR_QUARTER_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_YEAR_NUM"
+            },
+            "name" : "IS_CUR_YEAR_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_FISCAL_MONTH_NUM"
+            },
+            "name" : "IS_CUR_FISCAL_MONTH_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_FISCAL_QUARTER_NUM"
+            },
+            "name" : "IS_CUR_FISCAL_QUARTER_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_CUR_FISCAL_YEAR_NUM"
+            },
+            "name" : "IS_CUR_FISCAL_YEAR_NUM",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_WKTD"
+            },
+            "name" : "IS_WKTD",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          },
+          {
+            "adapterField" : {
+              "name" : "IS_WKTD_PY"
+            },
+            "name" : "IS_WKTD_PY",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0,
+            "fieldType" : "IN"
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@9F8mgx3WNy1iWwCQWVBOSW",
+          "connectionName" : "AM_Snowflake_06092023",
+          "sql" : "INSERT INTO CURATED_VISTAR.DATALAKE.zz_T2_SUPPLIER_SALES_AND_MARKET_SHARE_TEMP\nSELECT\n    DD.FIRST_OF_WEEK,\n    DD2.DATE_ID AS WEEK_ID,\n    DD.YEAR_NUM,\n    DD.WEEK_NUM,\n    DW.WH_OPCO_NUM AS OPCO_NUM,\n    DI.INV_CLASS,  -- DI.SUBCLASS_CODE,\n    SUM(F.INV_COST) AS TOTAL_INV_COST,\n    SUM(F.INV_CASES) AS TOTAL_INV_CASES\nFROM CURATED_VISTAR.DATAMART.FACT_INVOICE_SALES F\nINNER JOIN CURATED_VISTAR.DATAMART.DIM_WAREHOUSE DW\n    ON DW.WAREHOUSE_ID = F.WAREHOUSE_ID\nINNER JOIN CURATED_VISTAR.DATAMART.DIM_ITEM DI\n    ON DI.ITEM_ID = F.ITEM_ID\nINNER JOIN CURATED_VISTAR.DATAMART.DIM_CUSTOMER DC\n    ON DC.CUSTOMER_ID = F.CUSTOMER_ID\nINNER JOIN CURATED_VISTAR.DATAMART.DIM_DATE DD\n    ON DD.DATE = F.SLS_INV_DATE\nINNER JOIN CURATED_VISTAR.DATAMART.DIM_DATE DD2\n    ON DD2.DATE = DD.FIRST_OF_WEEK\nINNER JOIN CURATED_VISTAR.DATAMART.UM_T2_CATEGORY CAT\n    ON CAT.CATEGORY_NUM = DI.INV_CLASS\nLEFT JOIN CURATED_VISTAR.DATAMART.UM_T2_CAT_SUPP_EXCLUSION CS\n    ON CS.CATEGORY_NUM = DI.INV_CLASS\n   AND CS.SUPPLIER_ID = DI.SUPPLIER_ID\nLEFT JOIN CURATED_VISTAR.DATAMART.UM_T2_ITEM_EXCLUSION IE\n    ON IE.ITEM_NUMBER = DI.ITEM_NUMBER\nWHERE DC.CUSTOMER_CLASS_GROUP_PCDBI = 'CUSTOMER'\n  AND DC.MARKET_SEGMENT_CD <> 'FDSV'\n  AND DW.WH_ID NOT IN ('CN')\n  AND DD.IS_CUR_YEAR_NUM IN (0, -1, -2)\n  AND DD.IS_CUR_WK_NUM < 0\n  AND CS.SUPPLIER_ID IS NULL\n  AND IE.ITEM_NUMBER IS NULL\nGROUP BY\n    DD.FIRST_OF_WEEK,\n    DD2.DATE_ID,\n    DD.YEAR_NUM,\n    DD.WEEK_NUM,\n    DW.WH_OPCO_NUM,\n    DI.INV_CLASS  -- , DI.SUBCLASS_CODE\nORDER BY\n    DD.YEAR_NUM DESC,\n    DD.WEEK_NUM DESC,\n    DI.INV_CLASS",
+          "sqlMetadataEdited" : "false",
+          "sqlType" : "ENTERED_QUERY",
+          "typeSystem" : "TOOLKIT",
+          "fields" : [
+            {
+              "name" : "SQLError",
+              "fieldType" : "UNDEFINED",
+              "label" : "SQLError",
+              "nativeType" : "VARCHAR",
+              "original" : "false",
+              "precision" : 255,
+              "scale" : 0
+            },
+            {
+              "name" : "NumRowsAffected",
+              "fieldType" : "UNDEFINED",
+              "label" : "NumRowsAffected",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 255,
+              "scale" : 0
+            },
+            {
+              "name" : "DATE_ID",
+              "fieldType" : "UNDEFINED",
+              "label" : "DATE_ID",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "DATE",
+              "fieldType" : "UNDEFINED",
+              "label" : "DATE",
+              "nativeType" : "TIMESTAMPNTZ",
+              "original" : "false",
+              "precision" : 29,
+              "scale" : 9
+            },
+            {
+              "name" : "DAY_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "DAY_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "DAY_NAME",
+              "fieldType" : "UNDEFINED",
+              "label" : "DAY_NAME",
+              "nativeType" : "VARCHAR",
+              "original" : "false",
+              "precision" : 9,
+              "scale" : 0
+            },
+            {
+              "name" : "DAY_NAME_SHORT",
+              "fieldType" : "UNDEFINED",
+              "label" : "DAY_NAME_SHORT",
+              "nativeType" : "VARCHAR",
+              "original" : "false",
+              "precision" : 3,
+              "scale" : 0
+            },
+            {
+              "name" : "DAY_OF_WEEK_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "DAY_OF_WEEK_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "DAY_OF_YEAR_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "DAY_OF_YEAR_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_WEEKEND",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_WEEKEND",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "WEEK_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "WEEK_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "FISCAL_WEEK",
+              "fieldType" : "UNDEFINED",
+              "label" : "FISCAL_WEEK",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "FIRST_OF_WEEK",
+              "fieldType" : "UNDEFINED",
+              "label" : "FIRST_OF_WEEK",
+              "nativeType" : "TIMESTAMPNTZ",
+              "original" : "false",
+              "precision" : 29,
+              "scale" : 9
+            },
+            {
+              "name" : "LAST_OF_WEEK",
+              "fieldType" : "UNDEFINED",
+              "label" : "LAST_OF_WEEK",
+              "nativeType" : "TIMESTAMPNTZ",
+              "original" : "false",
+              "precision" : 29,
+              "scale" : 9
+            },
+            {
+              "name" : "WEEK_OF_MONTH_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "WEEK_OF_MONTH_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "FISCAL_PERIOD",
+              "fieldType" : "UNDEFINED",
+              "label" : "FISCAL_PERIOD",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "MONTH_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "MONTH_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "MONTH_NAME",
+              "fieldType" : "UNDEFINED",
+              "label" : "MONTH_NAME",
+              "nativeType" : "VARCHAR",
+              "original" : "false",
+              "precision" : 9,
+              "scale" : 0
+            },
+            {
+              "name" : "MONTH_NAME_SHORT",
+              "fieldType" : "UNDEFINED",
+              "label" : "MONTH_NAME_SHORT",
+              "nativeType" : "VARCHAR",
+              "original" : "false",
+              "precision" : 3,
+              "scale" : 0
+            },
+            {
+              "name" : "FIRST_OF_MONTH",
+              "fieldType" : "UNDEFINED",
+              "label" : "FIRST_OF_MONTH",
+              "nativeType" : "TIMESTAMPNTZ",
+              "original" : "false",
+              "precision" : 29,
+              "scale" : 9
+            },
+            {
+              "name" : "LAST_OF_MONTH",
+              "fieldType" : "UNDEFINED",
+              "label" : "LAST_OF_MONTH",
+              "nativeType" : "TIMESTAMPNTZ",
+              "original" : "false",
+              "precision" : 29,
+              "scale" : 9
+            },
+            {
+              "name" : "FIRST_OF_NEXT_MONTH",
+              "fieldType" : "UNDEFINED",
+              "label" : "FIRST_OF_NEXT_MONTH",
+              "nativeType" : "TIMESTAMPNTZ",
+              "original" : "false",
+              "precision" : 29,
+              "scale" : 9
+            },
+            {
+              "name" : "LAST_OF_NEXT_MONTH",
+              "fieldType" : "UNDEFINED",
+              "label" : "LAST_OF_NEXT_MONTH",
+              "nativeType" : "TIMESTAMPNTZ",
+              "original" : "false",
+              "precision" : 29,
+              "scale" : 9
+            },
+            {
+              "name" : "FISCAL_QUARTER",
+              "fieldType" : "UNDEFINED",
+              "label" : "FISCAL_QUARTER",
+              "nativeType" : "VARCHAR",
+              "original" : "false",
+              "precision" : 2,
+              "scale" : 0
+            },
+            {
+              "name" : "FISCAL_QUARTER_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "FISCAL_QUARTER_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "QUARTER_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "QUARTER_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "QUARTER",
+              "fieldType" : "UNDEFINED",
+              "label" : "QUARTER",
+              "nativeType" : "VARCHAR",
+              "original" : "false",
+              "precision" : 2,
+              "scale" : 0
+            },
+            {
+              "name" : "FIRST_OF_QUARTER",
+              "fieldType" : "UNDEFINED",
+              "label" : "FIRST_OF_QUARTER",
+              "nativeType" : "TIMESTAMPNTZ",
+              "original" : "false",
+              "precision" : 29,
+              "scale" : 9
+            },
+            {
+              "name" : "LAST_OF_QUARTER",
+              "fieldType" : "UNDEFINED",
+              "label" : "LAST_OF_QUARTER",
+              "nativeType" : "TIMESTAMPNTZ",
+              "original" : "false",
+              "precision" : 29,
+              "scale" : 9
+            },
+            {
+              "name" : "FISCAL_YEAR",
+              "fieldType" : "UNDEFINED",
+              "label" : "FISCAL_YEAR",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "YEAR_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "YEAR_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "FIRST_OF_YEAR",
+              "fieldType" : "UNDEFINED",
+              "label" : "FIRST_OF_YEAR",
+              "nativeType" : "TIMESTAMPNTZ",
+              "original" : "false",
+              "precision" : 29,
+              "scale" : 9
+            },
+            {
+              "name" : "LAST_OF_YEAR",
+              "fieldType" : "UNDEFINED",
+              "label" : "LAST_OF_YEAR",
+              "nativeType" : "TIMESTAMPNTZ",
+              "original" : "false",
+              "precision" : 29,
+              "scale" : 9
+            },
+            {
+              "name" : "IS_LEAP_YEAR",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_LEAP_YEAR",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "HAS_53_WEEKS",
+              "fieldType" : "UNDEFINED",
+              "label" : "HAS_53_WEEKS",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "STYLE_MMYYYY",
+              "fieldType" : "UNDEFINED",
+              "label" : "STYLE_MMYYYY",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "STYLE_WRITTEN",
+              "fieldType" : "UNDEFINED",
+              "label" : "STYLE_WRITTEN",
+              "nativeType" : "VARCHAR",
+              "original" : "false",
+              "precision" : 10,
+              "scale" : 0
+            },
+            {
+              "name" : "STYLE_NUMBER",
+              "fieldType" : "UNDEFINED",
+              "label" : "STYLE_NUMBER",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "STYLE_DB",
+              "fieldType" : "UNDEFINED",
+              "label" : "STYLE_DB",
+              "nativeType" : "VARCHAR",
+              "original" : "false",
+              "precision" : 10,
+              "scale" : 0
+            },
+            {
+              "name" : "STYLE_EXCEL",
+              "fieldType" : "UNDEFINED",
+              "label" : "STYLE_EXCEL",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_CUR_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_CUR_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_CUR_WK_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_CUR_WK_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_MTD",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_MTD",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_MTD_PY",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_MTD_PY",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_QTD",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_QTD",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_QTD_PY",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_QTD_PY",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_YTD",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_YTD",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_YTD_PY",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_YTD_PY",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_FISCAL_MTD",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_FISCAL_MTD",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_FISCAL_MTD_PY",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_FISCAL_MTD_PY",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_FISCAL_QTD",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_FISCAL_QTD",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_FISCAL_QTD_PY",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_FISCAL_QTD_PY",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_FISCAL_YTD",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_FISCAL_YTD",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_FISCAL_YTD_PY",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_FISCAL_YTD_PY",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_CUR_FISCAL_WEEK",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_CUR_FISCAL_WEEK",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_CUR_MONTH_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_CUR_MONTH_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_CUR_QUARTER_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_CUR_QUARTER_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_CUR_YEAR_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_CUR_YEAR_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_CUR_FISCAL_MONTH_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_CUR_FISCAL_MONTH_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_CUR_FISCAL_QUARTER_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_CUR_FISCAL_QUARTER_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_CUR_FISCAL_YEAR_NUM",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_CUR_FISCAL_YEAR_NUM",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_WKTD",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_WKTD",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            },
+            {
+              "name" : "IS_WKTD_PY",
+              "fieldType" : "UNDEFINED",
+              "label" : "IS_WKTD_PY",
+              "nativeType" : "NUMBER",
+              "original" : "false",
+              "precision" : 38,
+              "scale" : 0
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2026-01-07T15:25:02.988Z",
+        "name" : "Expression",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "fields" : [
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "VALIDATION",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 15,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "IIF(SQLError='', SetVariable($$sql_error, 'Success'), SetVariable($$sql_error, 'Error'))"
+          },
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "RUN_DATE",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "expFieldType" : "OUTPUT",
+            "expression" : "Systimestamp()"
+          }
+        ],
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
+      },
+      {
+        "createTime" : "2026-02-03T22:48:49.311Z",
+        "name" : "Filter",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "filterConditions" : [
+          {
+            "fieldName" : "SQLError",
+            "filterValue" : "1",
+            "operator" : "="
+          }
+        ]
+      }
+    ],
+    "variables" : [
+      {
+        "aggregationType" : "MAX",
+        "expressionVariable" : "false",
+        "name" : "sql_error",
+        "platformType" : {
+          "name" : "string"
+        },
+        "precision" : 10,
+        "retentionPolicy" : "ON_SUCCESS",
+        "scale" : 0
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-03-04 10:07:44 PST"
+}
