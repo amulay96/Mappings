@@ -10,6 +10,21 @@
         "link" : "Source -> Target"
       }
     ],
+    "parameters" : [
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "true",
+        "expressionVariable" : "false",
+        "name" : "ora_conn",
+        "anonymousType" : {
+          "typeSystem" : "Oracle",
+          "connectionType" : "Oracle"
+        }
+      }
+    ],
     "transformations" : [
       {
         "augmented" : "false",
@@ -60,8 +75,9 @@
           }
         ],
         "dataAdapter" : {
-          "connectionId" : "saas:@8Fj09pELEsplURfDu9vgoO",
-          "connectionName" : "conn_CDGC_Ora",
+          "connectionId$" : {
+            "name" : "ora_conn"
+          },
           "excludeDynamicFileNameField" : "false",
           "objectType" : "SINGLE",
           "typeSystem" : "Oracle",
@@ -255,5 +271,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2026-09-03 16:22:00 PDT"
+  "vcsExportTime" : "2026-09-03 16:24:47 PDT"
 }
