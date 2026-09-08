@@ -16,14 +16,14 @@
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "Mapping Task for Mapping - m_vcs_test - Which is Checked-Out at the Issue",
+        "description" : "Mapping Task for Mapping - m_vcs_test - Which is Checked-Out at the Issue ",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2026-09-08T17:29:03.217Z",
+  "updateTime" : "2026-09-08T17:34:34.965Z",
   "objectRefs" : [ {
     "id" : "kweWsvkS30hkNanxZvFZmr",
     "name" : "m_vcs_test",
