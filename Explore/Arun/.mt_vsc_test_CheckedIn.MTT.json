@@ -16,14 +16,14 @@
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "Mapping Task for Mapping - m_vcs_test - Which is Checked-in",
+        "description" : "Mapping Task for Mapping - m_vcs_test - Which is Checked-in ",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2026-09-08T17:26:26.256Z",
+  "updateTime" : "2026-09-08T17:33:37.106Z",
   "objectRefs" : [ {
     "id" : "kweWsvkS30hkNanxZvFZmr",
     "name" : "m_vcs_test",

@@ -1,6 +1,6 @@
 {
   "name" : "mt_vsc_test_CheckedIn",
-  "description" : "Mapping Task for Mapping - m_vcs_test - Which is Checked-in",
+  "description" : "Mapping Task for Mapping - m_vcs_test - Which is Checked-in ",
   "runtimeEnvironmentId" : "@13CSdBncOGokieAXkj232E",
   "runtimeEnvironmentName" : "GCS_DSG_Agents",
   "maxLogs" : 10,
@@ -114,7 +114,6 @@
         "connectionRuntimeParameter" : false,
         "objectRuntimeParameter" : false
       },
-      "targetSchemaProviderType" : "SELECTED_OBJECT",
       "restmodernSource" : true,
       "unspecified" : false,
       "fileList" : false
@@ -149,5 +148,5 @@
   "allowMaxFieldLength" : false,
   "specialCharacterSupport" : false,
   "midstreamPreview" : false,
-  "vcsExportTime" : "2026-09-08 10:26:26 PDT"
+  "vcsExportTime" : "2026-09-08 10:33:36 PDT"
 }
