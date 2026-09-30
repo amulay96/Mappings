@@ -12,6 +12,7 @@
     ],
     "transformations" : [
       {
+        "augmented" : "false",
         "createTime" : "2025-06-26T19:30:22.037Z",
         "name" : "Source",
         "advancedProperties" : [
@@ -144,6 +145,7 @@
         }
       },
       {
+        "augmented" : "false",
         "createTime" : "2025-06-26T19:30:22.037Z",
         "name" : "Target",
         "advancedProperties" : [
@@ -252,5 +254,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-07-21 08:39:22 PDT"
+  "vcsExportTime" : "2026-09-30 13:19:39 PDT"
 }
